@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="?attr/actionBarSize"
+        android:onClick="FinishApp"
+        android:theme="?attr/actionBarTheme"
+
+        app:navigationIcon="@android:drawable/ic_media_previous"
+        app:title="Tareitas"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Resumen"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/tv_task_to_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:text="Tarea para hacer"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_task_in_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Tarea en curso"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+     />
+    <TextView
+        android:id="@+id/tv_task_to_count2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Tarea para hacer"
+        android:textAllCaps="false"
+        android:textSize="24sp"/>
+<LinearLayout
+    android:layout_marginTop="24dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_new_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:onClick="ShowNewTaskForm"
+        android:text="Nuevo"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_show_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:textColor="@color/colorAccent"
+        android:onClick="ShowAllTasks"
+        android:text="Ver todo"
+        android:textAllCaps="false"
+        tools:ignore="OnClick" />
+</LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
